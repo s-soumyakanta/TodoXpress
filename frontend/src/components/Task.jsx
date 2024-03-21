@@ -15,9 +15,11 @@ const Task = () => {
   const fetcher = (url) => axios.get(url).then((res) => res.data);
   const { data, mutate } = useSWR("/api/get", fetcher);
   const inputRef = useRef(null)
+
   useEffect(() => {
     inputRef.current.focus();
   }, []);
+  
   const handleDelete = async (id) => {
     try {
       const response = await axios.delete(`/api/delete/${id}`);
@@ -206,7 +208,7 @@ const Task = () => {
         )}
 
         <div className="absolute top-0 right-0 m-3 text-blue-600">
-            <a href="#">
+            <a href="https://github.com/s-soumyakanta/TodoXpress" target="_blank">
             <div className="flex text-xs justify-center items-center space-x-1">
             <FaGithub />
                 <p>Source Code</p>
