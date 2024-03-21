@@ -114,7 +114,7 @@ const Task = () => {
       <div className="flex justify-center min-h-screen py-10  bg-slate-950 text-gray-200">
         <div className="w-4/5 flex flex-col items-center space-y-20 md:w-3/5">
           <div>
-            <h1 className="text-2xl md:text-4xl font-bold">TodoExpress</h1>
+            <h1 className="text-2xl md:text-4xl font-bold">TodoXpress</h1>
             <h2 className="text-base text-end pt-2">by <a href="https://s-soumyakanta.com" target="_blank" className="text-xs font-mono hover:text-blue-600">s-soumyakanta.com</a></h2>
           </div>
 
