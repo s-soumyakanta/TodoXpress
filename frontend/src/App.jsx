@@ -1,8 +1,11 @@
-
+import Task from "./components/Task";
 const App = () => {
   return (
-    <div className="text-4xl font-bold text-blue-600">App</div>
-  )
-}
+ <>
 
-export default App
+ <Task />
+ </>
+  );
+};
+
+export default App;

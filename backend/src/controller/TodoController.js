@@ -22,7 +22,7 @@ module.exports.updateToDo = (req, res) => {
   const { toDo } = req.body;
   const { id } = req.params;
   ToDoModel.findByIdAndUpdate(id, {toDo}).then((data) => {
-    res.send("Updated Successfully")
+    res.status(201).send("Updated Successfully")
   }).catch((err) => {
     console.log(err);
     res.send({ error: err, msg: "Something went wrong!" });
@@ -32,7 +32,7 @@ module.exports.updateToDo = (req, res) => {
 module.exports.deleteToDo = (req, res) => {
   const { id } = req.params;
   ToDoModel.findByIdAndDelete(id).then((data) => {
-    res.send("Deleted Successfully")
+    res.status(201).send("Deleted Successfully")
   }) .catch((err) => {
     console.log(err);
     res.send({ error: err, msg: "Something went wrong!" });
