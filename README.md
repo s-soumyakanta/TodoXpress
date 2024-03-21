@@ -29,17 +29,26 @@ In this project, I have built a simple Todo application where users can add, edi
     ```
     npm install
     ```
-4. Set up your MongoDB connection string in a `.env` file at the root of your project. Example:
+4. Navigate to the `backend` directory:
+    ```
+    cd backend
+    ```
+5. Set up your MongoDB connection string in a `.env` file at the root of your project. Example:
     ```
     MONGODB_URI=mongodb://localhost:27017/mydatabase
     ```
-5. Start the backend server:
+
+6. Install backend dependencies:
+    ```
+    npm install
+    ```
+7. Start the backend server:
     ```
     npm start
     ```
-6. Navigate to the `client` directory:
+6. Navigate to the `frontend` directory:
     ```
-    cd client
+    cd frontend
     ```
 7. Install frontend dependencies:
     ```
@@ -47,7 +56,7 @@ In this project, I have built a simple Todo application where users can add, edi
     ```
 8. Start the frontend development server:
     ```
-    npm start
+    npm run dev
     ```
 9. Open your web browser and navigate to `http://localhost:3000` to view the application.
 
