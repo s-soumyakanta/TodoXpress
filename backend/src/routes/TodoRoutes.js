@@ -5,7 +5,6 @@ const {
   updateToDo,
   deleteToDo,
 } = require("../controller/TodoController");
-
 const router = Router();
 
 router.get("/get", getToDos);
