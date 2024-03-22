@@ -7,7 +7,11 @@ const routes = require("./src/routes/TodoRoutes")
 const PORT = process.env.PORT || 5000;
 
 //middleware
-app.use(cors());
+const corsOptions = {
+  origin: 'https://todoxpress.vercel.app'
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 mongoose
