@@ -8,7 +8,8 @@ const PORT = process.env.PORT || 5000;
 
 //middleware
 const corsOptions = {
-  origin: 'https://todoxpress.vercel.app'
+  origin: 'https://todoxpress.vercel.app',
+  optionsSuccessStatus: 200 
 };
 
 app.use(cors(corsOptions));
